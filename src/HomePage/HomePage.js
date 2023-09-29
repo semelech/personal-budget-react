@@ -1,4 +1,5 @@
 import React from 'react';
+import Budget from '../Budget/Budget';
 
 function HomePage() {
   return (
@@ -71,6 +72,9 @@ function HomePage() {
             </article>
 
         </div>
+
+        <Budget/>
+        <div id = "d3Chart" width="400" height="400"></div>
 
     </main>
   );
