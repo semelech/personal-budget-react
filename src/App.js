@@ -13,7 +13,6 @@ import HomePage from './HomePage/HomePage';
 import Footer from './Footer/Footer';
 import AboutPage from './AboutPage/AboutPage';
 import LoginPage from './LoginPage/LoginPage';
-import Budget from './Budget/Budget';
 
 function App() {
   return (
@@ -38,18 +37,18 @@ function App() {
     // </Router>
 
     <Router>
+      <Menu />
+      <Hero />
       <div className="mainContainer">
-        <Menu/>
-        <Hero/>
         <Routes>
-          <Route path='/' element={<HomePage/>} />
-          <Route path='/about' element={<AboutPage/>} />
-          <Route path='/login' element={<LoginPage/>} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </div>
-      <Budget/>
-      <Footer/>
+      <Footer />
     </Router>
+
   );
 }
 
